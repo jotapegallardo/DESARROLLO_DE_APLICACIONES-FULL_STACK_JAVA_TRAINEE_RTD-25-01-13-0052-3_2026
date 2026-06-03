@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Modelo de Caja</title>
+    <style>
+        .caja{
+            width: 200px;
+            padding: 15px 40px 60px 80px;/* Arriba Derecha Abajo Izquierda*/
+            margin: 60px 20px 40px 150px;/* Arriba Derecha Abajo Izquierda*/
+
+            border: 10px solid blue;
+        }
+
+        #bienvenidos {
+            background-color: brown;
+        }
+
+        /*Clases para colores de fondo*/
+        .bg-aqua{
+            background-color: aqua;
+        }
+
+        .bg-black{
+            background-color: black;
+        }
+
+        /*Clases para colores de texto*/
+        .text-color-white{
+            color: white;
+        }
+        .text-color-red{
+            color: red;
+        }
+
+        /*Clases para margin */
+        .mtop-15 {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja bg-aqua">
+        Hola mundo!!
+    </div>
+    <div id="bienvenidos">
+        Bienvenidos!!
+    </div>
+    <div class="bg-black text-color-white mtop-15">
+        contenedor 1!!
+    </div>
+    <div class="bg-black text-color-red mtop-15">
+        contenedor 2!!
+    </div>
+</body>
+</html>
