@@ -1,0 +1,29 @@
+/* header {
+    background-color: black;
+} */
+
+#header_principal {
+    background-color: black;
+    padding-top: 25px;
+    border-style: dotted;
+    border-color: red;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.menu {
+    /*TODO: quitar línea inferior*/
+    /*text-decoration: none;  SOLO PARA ENLACES O TEXTO*/
+    list-style-type: none;
+    color: rgb(251, 216, 42);
+}
+
+.enlace{
+    text-decoration: none;
+
+}
+
+#texto_encabezado {
+    /*ombra horizontal y vertical,  efecto de desenfoque y color  de la sombra*/
+    text-shadow: 2px 2px 5px red;
+}

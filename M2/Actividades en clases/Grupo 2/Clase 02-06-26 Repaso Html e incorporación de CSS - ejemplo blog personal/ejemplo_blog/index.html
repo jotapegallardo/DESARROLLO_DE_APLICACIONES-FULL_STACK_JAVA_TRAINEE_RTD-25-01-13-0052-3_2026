@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi blog Personal</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        p {
+            color: blue; 
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header_principal">
+        <!-- Encabezado de mi web -->
+        <h1 id="texto_encabezado" style="color: #72d307;">Mi blog Personal</h1>
+        <p>Reflexiones, tecnología y aprendizaje</p>
+    </header>
+    <nav>
+        <!-- Menú de navegación -->
+        <ul class="menu">
+            <li><a class="enlace" href="#elemento_inicio">Inicio</a></li>
+            <li><a class="enlace" href="#elemento_articulos">Arículos</a></li>
+            <li><a class="enlace" href="#elemento_contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <!-- Contenido relacionado al blog -->
+        <h2>Contenido relacionado</h2>
+        <ul class="menu">
+            <li ><a class="enlace" href="#">Introducción a HTML</a></li>
+            <li><a class="enlace" href="#">Etiquetas de texto</a></li>
+            <li><a class="enlace" href="#">Formularios en HTML</a></li>
+        </ul>
+    </aside>
+    <main id="elemento_inicio">
+        <!-- Contenido principal de mi web -->
+        <section>
+            <!-- Sección para artículos -->
+            <h2>Últimos artículos</h2>
+            <article id="elemento_articulos">
+                <header>
+                    <h3>¿Qué es HTML semántico?</h3>
+                    <p>Publicado el 2 de junio de 2026</p>
+                </header>
+                <p>
+                    El HTML semántico es el uso de etiquetas HTML que describen claramente el significado de su
+                    contenido tanto para las máquinas como para los humanos, en lugar de solo definir su apariencia
+                    visual.
+                </p>
+                <figure>
+                    <img src="https://static.semrush.com/blog/uploads/media/1a/59/1a5929a5fb8fef03a8b61a750e06c6d1/ES-Semantic-Search.png"
+                        alt="Infografía de Semrush sobre los elementos del HTML semántico" width="250">
+                    <img src="assets/img/image_prueba.jpg" alt="imagen para prueba de inserción" width="150">
+                </figure>
+                <footer>
+                    <p>Autor: Juan Peréz</p>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <section id="elemento_contacto">
+        <!-- Sección para poner los datos de contacto -->
+        <h2>Datos de contacto</h2>
+        <address>
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+    </section>
+    <footer>
+        <!-- Pie de página de mi sitio web -->
+        <p>&copy; 2026 Mi Blog Personal. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
