@@ -12,6 +12,7 @@
     <img src="https://img.shields.io/badge/Java-25-red?style=for-the-badge&logo=openjdk">
     <img src="https://img.shields.io/badge/Spring_Boot-Framework-green?style=for-the-badge&logo=springboot">
     <img src="https://img.shields.io/badge/MySQL-Database-blue?style=for-the-badge&logo=mysql">
+    <img src="https://img.shields.io/badge/PostgreSQL-DATABASE-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">
     <img src="https://img.shields.io/badge/Git-Version_Control-orange?style=for-the-badge&logo=git">
     <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github">
 </p>
