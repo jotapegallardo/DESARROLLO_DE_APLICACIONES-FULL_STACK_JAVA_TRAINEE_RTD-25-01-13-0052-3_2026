@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi blog Personal</title>
+    
+    <!-- 
+    Estilos embebidos (Embedded
+    Styles):
+    Definición: Los estilos embebidos se
+    definen dentro del elemento <style> en
+    la sección <head> de un documento
+    HTML. Los estilos se aplican a los
+    elementos que coincidan con los
+    selectores definidos en ese documento.
+    -->
+    <style>
+        /*Selector de etiqueta*/
+        p { 
+            color: blue;  
+            font-size: 18px;
+        }
+
+        /*Selector de clase*/
+        .rojo {
+            color: red;
+            font-size: 30px;
+        }
+
+        /*Selector por id*/
+        #inicio {
+            background-color:aqua;
+        }
+    </style>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Aquí va el encabezado de mi web -->
+        <h1>Mi Blog Personal</h1>
+        <p>Reflexiones, tecnología y aprendizaje</p>
+    </header>
+    <nav>
+        <!-- Aquí va el menú de navegación -->
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#articulos">Artículos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main id="inicio">
+        <!-- Aquí va el contenido principal de mi web -->
+        <section id="articulos">
+            <h2>Últimos artículos</h2>
+            <article>
+                <header>
+                    <h3>¿Qué es HTML semántico?</h3>
+                    <p>Publicado el
+                        <time datetime="2026-06-01 19:07">01/06/2026</time>
+                    </p>
+                </header>
+                <p>
+                    El HTML semántico es el uso de etiquetas HTML que describen claramente el significado de su
+                    contenido tanto para las máquinas como para los humanos, en lugar de solo definir su apariencia
+                    visual.
+                </p>
+                <figure>
+                    <img src="https://static.semrush.com/blog/uploads/media/0a/0f/0a0fd07d0a6ee7a7f893b0e21379c0ae/ES-Semantic-Search-Non-Semantic.webp" width="200" alt="Ejemplo de estructura semántica">
+                </figure>
+                <footer>
+                    <p>Autor: Juan Pérez</p>
+                </footer>
+            </article>
+        </section>
+        <aside>
+            <h2 class="rojo">Contenido relacionado</h2>
+            <ul>
+                <li><a href="#">Introducción a HTML</a></li>
+                <li><a href="#">Etiquetas de texto en HTML</a></li>
+                <li><a href="#">Formularios en HTML</a></li>
+            </ul>
+        </aside>
+    </main>
+    <section id="contacto">
+        <!-- El formulario de contacto -->
+        <h2>Datos de contacto</h2>
+        <address class="rojo">
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+        </address>
+    </section>
+    <footer id="mi_footer">
+        <!-- Aquí pa el píe de página -->
+        <p class="texto_color_blanco">&copy; 2026 MI blog personal. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

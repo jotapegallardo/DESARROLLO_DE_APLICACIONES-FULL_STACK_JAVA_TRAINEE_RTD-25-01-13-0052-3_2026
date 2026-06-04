@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Flexbox</title>
+
+    <style>
+        .container {
+            background-color: blueviolet;
+            height: 400px;
+            padding: 10px;
+            display: flex; /*Activa flexbox*/
+
+            /*Controla la alineación sobre el eje principal*/
+            justify-content: center;
+
+            /*Controla la alineación en el eje secundario*/
+            align-items: flex-end;
+
+            /* Cambia la dirección del eje principal */
+            flex-direction: row;
+
+            /*Agrega una sepación entre elementos*/
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        .item{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"><!-- Padre -->
+        <div class="item">Item 1</div><!-- Hijo -->
+        <div class="item">Item 2</div><!-- Hijo -->
+        <div class="item">Item 3</div><!-- Hijo -->
+        <div class="item">Item 1</div><!-- Hijo -->
+        <div class="item">Item 2</div><!-- Hijo -->
+        <div class="item">Item 3</div><!-- Hijo -->
+        <div class="item">Item 1</div><!-- Hijo -->
+        <div class="item">Item 2</div><!-- Hijo -->
+        <div class="item">Item 3</div><!-- Hijo -->
+        <div class="item">Item 1</div><!-- Hijo -->
+        <div class="item">Item 2</div><!-- Hijo -->
+        <div class="item">Item 3</div><!-- Hijo -->
+        <div class="item">Item 1</div><!-- Hijo -->
+        <div class="item">Item 2</div><!-- Hijo -->
+        <div class="item">Item 3</div><!-- Hijo -->
+    </div>
+</body>
+
+</html>
