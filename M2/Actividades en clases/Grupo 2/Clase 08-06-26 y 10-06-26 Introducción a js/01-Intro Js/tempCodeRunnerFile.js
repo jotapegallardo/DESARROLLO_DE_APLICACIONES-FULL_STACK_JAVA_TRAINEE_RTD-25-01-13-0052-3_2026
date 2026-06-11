@@ -1,8 +1,5 @@
-let esEstudiante = false;
-let esEmpleado = false;
+let num7 = 10;
+let num8 = 25;
 
-if (esEstudiante || esEmpleado){
-    console.log("Tienes acceso a descuentos");
-}else{
-    console.log("No tienes acceso a descuentos");
-}
+let respuesta = num7 < num8 ? "el 1" : "el 2";
+console.log(respuesta);

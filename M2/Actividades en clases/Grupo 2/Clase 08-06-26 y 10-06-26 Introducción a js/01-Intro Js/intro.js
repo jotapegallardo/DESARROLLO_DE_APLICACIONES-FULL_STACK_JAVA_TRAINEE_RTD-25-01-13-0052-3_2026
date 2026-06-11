@@ -361,3 +361,76 @@ if (esEstudiante || esEmpleado){
 }else{
     console.log("No tienes acceso a descuentos");
 }
+
+
+/* Switch
+La sentencia switch en JavaScript es una estructura de control condicional 
+que permite ejecutar diferentes bloques de código basándose en el valor de 
+una expresión, sirviendo como una alternativa más organizada y 
+legible a múltiples if...else if anidados, evaluando una variable y 
+comparándola con varios case (casos), ejecutando el bloque del caso 
+coincidente y un default (predeterminado) opcional si no hay coincidencias, 
+siendo clave la sentencia break para evitar la "caída" (ejecución de casos posteriores). 
+
+*/
+
+let fruta2 = "Platanos";
+
+switch (fruta2) {
+    case "Naranjas":
+        console.log("El valor del las Naranjas es de $2200");
+        break;//NO OLVIDAR PONER EL BREAK ¡¡IMPORTANTE!!
+
+    case "Platanos":
+        console.log("El valor del los Platanos es de $1500");
+        break;
+
+    case "Manzanas":
+        console.log("El valor del las Manzanas es de $900");
+        break;
+
+    case "Cerezas":
+        console.log("El valor del las Cerezas es de $1900");
+        break;
+    
+    default:
+        console.log(`No contamos con la fruta que esta buscando (${fruta2}).`);
+}
+
+let opcion = 2;
+
+switch (opcion) {
+    case 1:
+        console.log("Menú 1");
+        break;
+    case 2:
+        console.log("Menú 2");
+        break;
+    case 3:
+        console.log("Menú 3");
+        break;
+
+    default:
+        console.log("Opción de menú no válida");
+}
+
+
+//============ Operador ternario ==============
+
+let num7 = 10;
+let num8 = 25;
+
+let respuesta = num7 < num8 ? "el 1" : "el 2";
+console.log(respuesta);
+
+/* COMPARACIÓN DE OPERADOR TERNARIO CON IF ELSE 
+
+let resultado;
+
+if (num7 < num8) {
+    resultado = "el 1";
+}else {
+    resultado = "el 2";
+}
+
+*/
