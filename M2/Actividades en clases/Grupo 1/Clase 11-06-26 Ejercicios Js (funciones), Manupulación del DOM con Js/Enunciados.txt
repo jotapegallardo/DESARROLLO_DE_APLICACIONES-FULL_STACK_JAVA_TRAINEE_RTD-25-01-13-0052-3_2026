@@ -1,0 +1,30 @@
+1) Saber si un número es par
+
+Enunciado:
+Crea una función esPar(numero) que retorne true si el número es par y false si es impar.
+
+
+2) Convertir grados Celsius a Fahrenheit
+
+Enunciado:
+Crea una función celsiusAFahrenheit(c) que reciba grados Celsius y retorne su equivalente en Fahrenheit.
+Fórmula: F = (C * 9/5) + 32
+
+
+3) Devolver el mayor de dos números
+
+Enunciado:
+Crea una función mayor(a, b) que retorne el número más grande. Si son iguales, retorna cualquiera (por ejemplo a).
+
+
+4) Calcular el área de un rectángulo
+
+Enunciado:
+Crea una función areaRectangulo(base, altura) que reciba la base y la altura, y retorne el área.
+Fórmula: área = base * altura
+
+
+5) Convertir años a días
+
+Enunciado:
+Crea una función aniosADias(anios) que reciba una cantidad de años y retorne cuántos días son (considera que 1 año tiene 365 días).
