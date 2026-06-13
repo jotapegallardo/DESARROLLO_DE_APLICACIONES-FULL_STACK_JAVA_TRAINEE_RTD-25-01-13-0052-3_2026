@@ -4,6 +4,16 @@ Enunciado:
 Crea una función esPar(numero) que retorne true si el número es par y false si es impar.
 
 
+function numero_par(numero) {
+if (numero % 2 === 0) {
+return console.log("El número es par");
+}
+return console.log("El número no es par");
+}
+
+numero_par();
+
+
 2) Convertir grados Celsius a Fahrenheit
 
 Enunciado:
