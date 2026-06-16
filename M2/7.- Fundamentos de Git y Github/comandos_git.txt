@@ -1,0 +1,45 @@
+git --version.
+git config --global user.name
+git config --global user.email
+
+Dos opciones 
+- Crear repo en github y hacer git clone
+	crear repo remoto en github.com
+	abrir consola gitbash en local donde voy a clonar repo
+	git clone https://github.com/........nombre usuario/repo.git
+	en la consola cd nombre repo clonado, al ingresar se activa git
+	git pull (para traer los cambios en remoto)
+	
+- crear repo local, luego crear repo en github
+	AL INICIAR UN PROYECTO
+    	git init
+    	git add .
+    	git commit -m "Mensaje"
+	crear repositorio remoto en github
+    	git remote add origin url-de-github
+    	git push -u origin branch
+
+REALICEMOS CAMBIOS
+    git status (para verificar si hya cambios  pendientes)
+    git add .
+    git commit -m "Mensaje"
+    git push -u origin branch
+
+BRANCHES (Ramas)
+    git branch   (para ver en que rama estoy parado) 
+    git branch nombre-nueva-rama (crea una nueva rama)
+    git branch -m nombre-actual-rama nuevo-nombre-rama  (nos permite cambiar el nombre de una rama)
+    git checkout nombre-rama (nos permite cambiar de la rama actual a otra rama)
+    git checkout -b nombre-nueva-rama (Crea una nueva y se mueve a ella)
+    git fetch (nos permite traer todos los cambios de mi proyecto remoto inlcuidas las nuevas ramas)
+
+
+
+MERGE (Unificar ramas en una sóla)
+    git checkout master
+    git pull origin master
+    git merge nombre-de-tu-rama  (Debo estar parado en la rama que va a recibir los cambios)
+
+ELIMINAR RAMAS
+    git branch -d nombre-de-tu-rama       # Elimina localmente
+    git push origin --delete nombre-de-tu-rama  # Elimina remotamente

@@ -154,3 +154,102 @@ btnSumar.addEventListener("click", function(){
     let resultadoSuma = Number(numeroUno.value) + Number(numeroDos.value);
     resultado.textContent = resultadoSuma;
 });
+
+//Agregar Nodos al DOM (crear elementos o etiquetas html)
+let lista = document.querySelector("#lista");
+let btnAgregarNodo =  document.querySelector("#btn-agregar-nodo");
+
+btnAgregarNodo.addEventListener("click", function(){
+    let nuevoItem = document.createElement("li");//Crear un nuevo nodo o elemento
+    nuevoItem.textContent = "Nuevo Nodo!!";
+    lista.appendChild(nuevoItem);
+});
+
+//otro ejemplo, agregar parrafo
+let btnAgregarNodo2 =  document.querySelector("#btn-agregar-nodo2");
+let contenedorParrafo = document.querySelector("#contenedor-parrafo");
+
+btnAgregarNodo2.addEventListener("click", function(){
+    let nuevoParrafo = document.createElement("p");
+    nuevoParrafo.textContent = "Nuevo parrafo";
+    contenedorParrafo.appendChild(nuevoParrafo);
+});
+
+
+//Quitar nodos del DOM
+let  btnRemove = document.querySelector("#btn-remove");
+
+btnRemove.addEventListener("click", function(){
+    if(lista.lastElementChild){
+        lista.lastElementChild.remove();
+    }else{
+        alert("No existen elementos a eliminar");
+    }
+});
+
+//otra opción 
+let  btnRemove2 = document.querySelector("#btn-remove2");
+
+btnRemove2.addEventListener("click", function(){
+    if(lista.lastElementChild){
+        lista.removeChild(lista.lastElementChild);
+    }else{
+        alert("No existen elementos a eliminar");
+    }
+});
+
+//Eventos básicos
+let btnClick = document.querySelector("#btn-click");
+
+btnClick.addEventListener("click", function(){
+    alert("Botón presionado");
+});
+
+
+//Evento input
+let ingresoTexto = document.querySelector("#ingreso-texto");
+let resultadoInput = document.querySelector("#resultado-input");
+
+ingresoTexto.addEventListener("input", function(){
+    console.log(ingresoTexto.value);
+    resultadoInput.textContent = ingresoTexto.value;
+});
+
+
+//Evento change
+let ingresoTexto2 = document.querySelector("#ingreso-texto2");
+let resultadoInput2 = document.querySelector("#resultado-input2");
+
+ingresoTexto2.addEventListener("change", function(){
+    console.log(ingresoTexto2.value);
+    resultadoInput2.textContent = ingresoTexto2.value;
+});
+
+
+//Evento mouseover --> mouse entre
+let caja = document.querySelector("#caja");
+
+caja.addEventListener("mouseover", function(){
+    caja.style.backgroundColor = "red";
+    caja.style.color = "#FFFFFF";
+    caja.textContent = "Mouse dentro del nodo!!";
+
+});
+
+
+//evento mouseout --> mouse sale
+caja.addEventListener("mouseout", function(){
+    caja.style.backgroundColor = "#05DF65";
+    caja.style.color = "#051df2";
+    caja.textContent = "Mouse fuera del nodo!!";
+
+});
+
+
+//Evento keydown
+let ingresoTexto3 = document.querySelector("#ingreso-texto3");
+let resultadoInput3 = document.querySelector("#resultado-input3");
+
+ingresoTexto3.addEventListener("keydown", function(event){
+    resultadoInput3.textContent = event.key;
+});
