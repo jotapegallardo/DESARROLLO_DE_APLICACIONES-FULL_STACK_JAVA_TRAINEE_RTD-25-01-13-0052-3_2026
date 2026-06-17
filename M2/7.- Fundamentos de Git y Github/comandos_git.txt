@@ -1,4 +1,4 @@
-git --version.
+git --version
 git config --global user.name
 git config --global user.email
 
@@ -17,10 +17,10 @@ Dos opciones
     	git commit -m "Mensaje"
 	crear repositorio remoto en github
     	git remote add origin url-de-github
-    	git push -u origin branch
+    	git push -u origin (branch --> nombre de la rama)
 
 REALICEMOS CAMBIOS
-    git status (para verificar si hya cambios  pendientes)
+    git status (para verificar si hay cambios  pendientes)
     git add .
     git commit -m "Mensaje"
     git push -u origin branch
