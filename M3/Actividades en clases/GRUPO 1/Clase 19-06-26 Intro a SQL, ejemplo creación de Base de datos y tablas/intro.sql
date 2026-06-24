@@ -252,7 +252,7 @@ id   nombre   edad    curso
 Problemas:
 - Se repite información.
 - La información esta mal escrita
-- Si el nombre dedl curao cambia, debemos modificar muchos registros de manera individual
+- Si el nombre del curso cambia, debemos modificar muchos registros de manera individual
 - Pueden producirse errores de escritura
 
 */
